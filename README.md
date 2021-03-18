@@ -4,3 +4,5 @@
 [linkki gitlog.txt:iin] (https://github.com/mojord/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 **tehdään paikallisella koneella jokin muutos**
 *Mergus serrator* on tukkakoskelo.
+
+*Mergus meganser* on **isokoskelo**
