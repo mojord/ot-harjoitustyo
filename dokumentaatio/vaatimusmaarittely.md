@@ -37,7 +37,7 @@ tuottaa pyydettyjä tilastoja ja kuvaajia
 
 Käytettävissä olevan ajan puitteissa perusversioon voidaan lisätä toiminnallisuuksia:
 
-- voidaan laajentaa tuotettavien kuvaajien ja tilastojen monipuolisemmaksi,
+- voidaan laajentaa tuotettavien kuvaajien ja tilastojen tarjontaa monipuolisemmaksi,
  ja erityisesti kehittää määrien laskemisen metodeja
 - voidaan lisätä tietokantaominaisuus
 - voidaan lisätä käyttäjähierarkia (tätä ei ole tarkoitus toteuttaa vielä)	 
