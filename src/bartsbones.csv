@@ -1,0 +1,23 @@
+nsp;paino;luokka;laji;luu;osa;puoli;kokonainen;huomioita;kokoluokka;part;burn;iuv;cut;findnr;x;y;context;layer
+2;0.17;Mammalia;Indet;dens;;;fr;ruminant enamel outer layer;;de;;;;288;200,0;500,0;200/500;3
+1;0.14;Indet;Indet;indet;;;fr;;;;w;;;289;200,0;500,5;200/500;3
+2;0.26;Indet;Indet;indet;;;fr;;;;wnc;;;289;200,0;500,5;200/500;3
+1;0.26;Mammalia;Indet;indet;;;fr;;;;w;;;289;200,0;500,5;200/500;3
+3;0.56;Mammalia;Indet;indet;;;fr;;;;wnc;;;289;200,0;500,5;200/500;3
+1;0.19;Mammalia;Indet;indet;;;fr;;;;wblu;;;289;200,0;500,5;200/500;3
+2;0.3;Aves;Indet;indet;;;fr;;;ex;;;;290;200,0;500,5;200/500;3
+1;0.09;Aves;Indet;indet;;;fr;;;tr;;;;290;200,0;500,5;200/500;3
+1;0.09;Teleostei;Esox lucius;articulare;;sin;;;;cr;;;;290;200,0;500,5;200/500;3
+2;0.29;Indet;Indet;indet;;;fr;;;;;;;290;200,0;500,5;200/500;3
+1;0.84;Mammalia;Indet;os longum;;;fr;;;ex;;;;290;200,0;500,5;200/500;3
+2;0.57;Mammalia;Indet;indet;;;fr;;;;;;;290;200,0;500,5;200/500;3
+1;0.29;Mammalia;Indet;os longum;;;fr;;;ex;;;cut;290;200,0;500,5;200/500;3
+1;0.04;Mammalia;Indet;indet;;;fr;;;;;;cut;290;200,0;500,5;200/500;3
+1;0.28;Mammalia;Indet;vertebra;;;fr;;;tr;;;;290;200,0;500,5;200/500;3
+1;0.54;Mammalia;Indet;costa;;;fr;;;tr;;;;290;200,0;500,5;200/500;3
+1;0.8;Mammalia;Indet;costa;;;fr;;;tr;;iuv;cut;290;200,0;500,5;200/500;3
+1;0.05;Indet;Indet;indet;;;fr;;;;wc;;;291;200,5;500,0;200/500;3
+2;0.19;Indet;Indet;indet;;;fr;;;;wnc;;;291;200,5;500,0;200/500;3
+3;0.61;Mammalia;Indet;indet;;;fr;;;;wnc;;;291;200,5;500,0;200/500;3
+1;0.03;Mammalia;Indet;dens;;;fr;ruminant enamel outer layer;;de;;;;292;200,5;500,0;200/500;3
+1;0.17;Indet;Indet;indet;;;fr;;;;wnc;;;296;200,5;500,5;200/500;3
