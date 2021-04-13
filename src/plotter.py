@@ -30,7 +30,7 @@ class Plotter:
         
 #        plt.bar(x_coords, heights, tick_label = labels, width = 0.8, color = ["blue", "green"])
 #        plt.xlabel("xtest")
-3        plt.ylabel("ytest")
+#        plt.ylabel("ytest")
 #        plt.title("Identified classes by nisp and weight")
         
 
