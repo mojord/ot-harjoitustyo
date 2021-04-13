@@ -1,4 +1,4 @@
-import sqlite3
+#import sqlite3
 from reader import *
 from plotter import *
 #db = sqlite.connect("testi.db")
