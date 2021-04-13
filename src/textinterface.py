@@ -11,7 +11,7 @@ class BoneatorTextInterface:
         print("Options: ")
         print("Press 0 to quit, m to see manual.")
         print("1 Show file. 2 Count identifed species.")
-        print("3 Count identified species by class. 4 Count NISP by class.")
+        print("3 Count NISP by class. 4 Show identified bones of given species.")
         print("5 Count NISP and weight by class")
 
     def read_file(self):

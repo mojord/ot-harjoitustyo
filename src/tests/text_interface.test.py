@@ -1,11 +1,18 @@
 import unittest
 from textinterface import *
+from bonecatalogue import *
 
 
-class TestBoneatorTextinterface(unittest.TestCase):
+class Bonecaalogue(unittest.TestCase):
     def setUp(self):
-        self.testdata = open("testaus.csv").read_file()
+        self.testdata = open("testaus.csv")Textinterface.read_file()
+	self.catalogue = Bonecatalogue()
+	
 
-    def count_nisp_by_class_toimii_oikein(self):
+    def give_species_toimii_oikein(self):
+	species = "Bos taurus"
+	tulos = self.catalogue.give_species(species)
+	self.assertEqual(tulos, "Bos taurus specimens: 1, identified bones: [('femur', '1')]")
+	
 	 
 
