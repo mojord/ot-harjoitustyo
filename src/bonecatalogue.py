@@ -39,8 +39,8 @@ class Bonecatalogue:
         for key, value in nispweight.items():
             print(f"{key}, {value}")
 
-        plot = Plotter()
-        plot.bar_chart_nsp_and_weight(nispweight)
+#        plot = Plotter()
+#        plot.bar_chart_nsp_and_weight(nispweight)
 
     
     def count_nisp_by_class(self):
@@ -58,8 +58,8 @@ class Bonecatalogue:
             if key != "Indet":
                 identified += int(value)
         print(f"{identified} specimens identified by class, {indets} indetermined")
-        plot = Plotter()
-        plot.classis_bar_chart(nispclasses)
+ #       plot = Plotter()
+ #       plot.classis_bar_chart(nispclasses)
 
     def give_species(self, species):
         count = 0

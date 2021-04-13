@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 class Plotter:
     def __init__(self):
@@ -8,8 +8,8 @@ class Plotter:
     def classis_bar_chart(self, dictionary):
         keys = dictionary.keys()
         values = dictionary.values()
-        plt.bar(keys, values)
-        plt.show()
+#        plt.bar(keys, values)
+#        plt.show()
     
     def bar_chart_nsp_and_weight(self, dictionary):
         labels = []
@@ -28,10 +28,10 @@ class Plotter:
         
         x_coords = list(range(len(labels)))
         
-        plt.bar(x_coords, heights, tick_label = labels, width = 0.8, color = ["blue", "green"])
-        plt.xlabel("xtest")
-        plt.ylabel("ytest")
-        plt.title("Identified classes by nisp and weight")
+#        plt.bar(x_coords, heights, tick_label = labels, width = 0.8, color = ["blue", "green"])
+#        plt.xlabel("xtest")
+3        plt.ylabel("ytest")
+#        plt.title("Identified classes by nisp and weight")
         
 
-        plt.show()
+#        plt.show()
