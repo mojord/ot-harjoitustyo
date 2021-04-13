@@ -25,7 +25,7 @@ class Bonecatalogue:
                     specieslist[bone.species] = 0
                 specieslist[bone.species] += 1
         for key, value in specieslist.items():
-            print(f"{key}, {value}")        
+            print(f"{key}, {value}")
         print(f"{len(specieslist)} species")
     
     def count_nisp_and_weight(self):

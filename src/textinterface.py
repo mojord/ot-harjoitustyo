@@ -1,6 +1,7 @@
-
+import os
 from reader import *
 from bonecatalogue import *
+
 
 class BoneatorTextInterface:
     def __init__(self):
@@ -15,7 +16,7 @@ class BoneatorTextInterface:
         print("5 Count NISP and weight by class")
 
     def read_file(self):
-        file = input("Hello, please give csv filename: ")
+        file = (input("Hello, please give csv filename: "))
         self.catalogue.read_file(file)
 
     def do(self):
