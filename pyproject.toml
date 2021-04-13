@@ -5,7 +5,7 @@ description = ""
 authors = ["Anna Kangasmaa <anna.kangasmaa@helsinki.fi>"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7.0"
 matplotlib = "^3.4.1"
 sqlite3-api = "^2.0.1"
 
