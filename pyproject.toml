@@ -6,10 +6,10 @@ authors = ["Anna Kangasmaa <anna.kangasmaa@helsinki.fi>"]
 
 [tool.poetry.dependencies]
 python = "^3.7.0"
-matplotlib = "^3.4.1"
 sqlite3-api = "^2.0.1"
 
 [tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
