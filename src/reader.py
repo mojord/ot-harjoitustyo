@@ -1,7 +1,7 @@
  
 import csv
 from bone import *
-from testbone import *
+#from testbone import *
 
 class FileReader():
     def __init__(self, file):
