@@ -16,6 +16,8 @@ class Bonecatalogue:
         path = os.path.join(dirname, file)
         reader = FileReader(path)
         self.file = reader.read()
+    def kokeilu(self):
+        return f"buenos dias"
     
     def show_file(self):
         for bone in self.file:
@@ -72,7 +74,7 @@ class Bonecatalogue:
             if bone.species == species:
                 count += 1
                 bonelist.append((bone.ossum, bone.findnr))
-        print(f"{species} specimens: {count}, identified bones: {bonelist}")
+        return f"{species} specimens: {count}, identified bones: {bonelist}"
 
 
     

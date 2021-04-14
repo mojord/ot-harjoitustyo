@@ -22,6 +22,7 @@ class BoneatorTextInterface:
 
     def do(self):
         self.read_file()
+        self.catalogue.kokeilu()
         self.manual()
         while True:
             print("")
@@ -39,7 +40,7 @@ class BoneatorTextInterface:
                 self.catalogue.count_nisp_by_class()
             elif option == "4":
                 species = input("Give species: ")
-                self.catalogue.give_species(species)
+                print(self.catalogue.give_species(species))
             elif option == "5":
                 self.catalogue.count_nisp_and_weight()
 
