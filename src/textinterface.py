@@ -1,4 +1,5 @@
 import os
+from tkinter import *
 from reader import *
 from bonecatalogue import *
 

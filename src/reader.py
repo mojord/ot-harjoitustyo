@@ -2,7 +2,7 @@ import os
 import csv
 from bone import *
 #from testbone import *
-DATA = os.path.join(os.path.dirname(__file__), "bartsbones.csv")
+
 
 class FileReader():
     def __init__(self, file):
@@ -10,7 +10,7 @@ class FileReader():
     
     def read(self):
         bones = []
-        with open(DATA) as f:
+        with open(self.file) as f:
             for row in f:
                 parts = row.split(";")
                 if parts[0] == "nsp":

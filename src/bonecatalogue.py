@@ -1,8 +1,11 @@
 #import sqlite3
+import os
 from reader import *
 from plotter import *
 #db = sqlite.connect("testi.db")
 #db.isolation_level = None
+
+dirname = os.path.dirname(__file__)
 
 class Bonecatalogue:
     
@@ -10,7 +13,8 @@ class Bonecatalogue:
         self.file = []
 
     def read_file(self, file):
-        reader = FileReader(file)
+        path = os.path.join(dirname, file)
+        reader = FileReader(path)
         self.file = reader.read()
     
     def show_file(self):
