@@ -10,7 +10,7 @@ class TestBonecatalogue(unittest.TestCase):
         self.testdata = self.catalogue.read_file(TESTDATA)
 	
 
-    def give_species_toimii_oikein(self):
+    def test_give_species_toimii_oikein(self):
         species = "Bos taurus"
         tulos = self.catalogue.give_species(species)
         self.assertEqual(tulos, "Bos taurus specimens: 1, identified bones: [('femur', '1')]")
