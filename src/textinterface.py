@@ -17,6 +17,7 @@ class BoneatorTextInterface:
         print("5 Count NISP and weight by class")
 
     def read_file(self):
+        print("Welcome!Please use filenames bartsbones.csv or testaus.csv for trying out this program.")
         file = (input("Hello, please give csv filename: "))
         self.catalogue.read_file(file)
 
