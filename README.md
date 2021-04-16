@@ -21,6 +21,7 @@ poetry run invoke test
 Testikattavuusraportin saa komennolla:
 ```bash
 poetry run invoke coverage-report
+```
 
 Raportti generoituu hmtlcov-hakemistoon. Raporttia voi tarkastella selaimessa avaamalla index.html-tiedoston. 
 
