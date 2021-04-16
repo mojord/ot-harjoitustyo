@@ -8,7 +8,7 @@ from plotter import *
 dirname = os.path.dirname(__file__)
 
 class Bonecatalogue:
-    
+
     def __init__(self):
         self.file = []
 
@@ -18,7 +18,7 @@ class Bonecatalogue:
         self.file = reader.read()
     def kokeilu(self):
         return f"buenos dias"
-    
+
     def show_file(self):
         for bone in self.file:
             print(bone)
@@ -33,10 +33,10 @@ class Bonecatalogue:
         for key, value in specieslist.items():
             print(f"{key}, {value}")
         print(f"{len(specieslist)} species")
-    
+
     def count_nisp_and_weight(self):
         nispweight = {}
-        for bone in self.file:            
+        for bone in self.file:
             if bone.classis in nispweight:
                 nispweight[bone.classis][0] += int(bone.nisp)
                 nispweight[bone.classis][1] += float(bone.weight)
@@ -48,12 +48,12 @@ class Bonecatalogue:
 #        plot = Plotter()
 #        plot.bar_chart_nsp_and_weight(nispweight)
 
-    
+
     def count_nisp_by_class(self):
         nispclasses = {}
         identified = 0
         indets = 0
-        for bone in self.file:            
+        for bone in self.file:
             if bone.classis in nispclasses:
                 nispclasses[bone.classis] += int(bone.nisp)
             if bone.classis not in nispclasses:
@@ -76,7 +76,3 @@ class Bonecatalogue:
                 bonelist.append((bone.ossum, bone.findnr))
         return f"{species} specimens: {count}, identified bones: {bonelist}"
 
-
-    
-
-    
