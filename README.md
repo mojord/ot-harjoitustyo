@@ -4,6 +4,7 @@
 
 [Vaatimusmäärittely](https://github.com/mojord/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
+[Arkkitehtuurikuvaus](https://github.com/mojord/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 ## Sovelluksen käyttäminen komentorivillä
 

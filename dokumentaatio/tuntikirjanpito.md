@@ -12,3 +12,10 @@ päivä | aika | mitä tehty
 14.4. | 3    | poetry-ongelmien ja testien korjaus saadun polkutiedon avulla
 16.4. | 3    | pylint, coverage, toiminnan tarkistelua
 20.4. | 3    | uusi metodi sovellukseen
+20.4. | 1    | arkkitehtuurikuvaus
+
+
+
+
+
+YHT.   36 tuntia

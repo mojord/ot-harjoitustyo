@@ -29,6 +29,7 @@ käyttäjähierarkiaa.
 
 ## Suunnittellut toiminnallisuudet
 
+- tekstikäyttöliittymä
 - yksinkertainen graafinen käyttöliittymä
 - sovellukselle annetaan syötteeksi csv-tiedosto, jonka sovellus lukee tiedostoon ja 
 tuottaa pyydettyjä tilastoja ja kuvaajia
@@ -41,3 +42,9 @@ Käytettävissä olevan ajan puitteissa perusversioon voidaan lisätä toiminnal
  ja erityisesti kehittää määrien laskemisen metodeja
 - voidaan lisätä tietokantaominaisuus
 - voidaan lisätä käyttäjähierarkia (tätä ei ole tarkoitus toteuttaa vielä)	 
+
+## Tehty
+
+- tekstikäyttöliittymä
+- sovellus ja osa sen metodeista
+- graafien tuottaminen osalle metodeista, tämä ei näy ohjelmaa ajettaessa, koska poetryn ja matplotlibin yhteensopivuusongelma on vielä ratkaisematta
