@@ -1,0 +1,106 @@
+nsp;paino;luokka;laji;luu;osa;puoli;kokonainen;huomioita;kokoluokka;part;burn;iuv;cut;findnr;x;y;context;layer
+2;0.17;Mammalia;Indet;dens;;;fr;ruminant enamel outer layer;;de;;;;288;200,0;500,0;200/500;3
+1;0.14;Indet;Indet;indet;;;fr;;;;w;;;289;200,0;500,5;200/500;3
+2;0.26;Indet;Indet;indet;;;fr;;;;wnc;;;289;200,0;500,5;200/500;3
+1;0.26;Mammalia;Indet;indet;;;fr;;;;w;;;289;200,0;500,5;200/500;3
+3;0.56;Mammalia;Indet;indet;;;fr;;;;wnc;;;289;200,0;500,5;200/500;3
+1;0.19;Mammalia;Indet;indet;;;fr;;;;wblu;;;289;200,0;500,5;200/500;3
+2;0.3;Aves;Indet;indet;;;fr;;;ex;;;;290;200,0;500,5;200/500;3
+1;0.09;Aves;Indet;indet;;;fr;;;tr;;;;290;200,0;500,5;200/500;3
+1;0.09;Teleostei;Esox lucius;articulare;;sin;;;;cr;;;;290;200,0;500,5;200/500;3
+2;0.29;Indet;Indet;indet;;;fr;;;;;;;290;200,0;500,5;200/500;3
+1;0.84;Mammalia;Indet;os longum;;;fr;;;ex;;;;290;200,0;500,5;200/500;3
+2;0.57;Mammalia;Indet;indet;;;fr;;;;;;;290;200,0;500,5;200/500;3
+1;0.29;Mammalia;Indet;os longum;;;fr;;;ex;;;cut;290;200,0;500,5;200/500;3
+1;0.04;Mammalia;Indet;indet;;;fr;;;;;;cut;290;200,0;500,5;200/500;3
+1;0.28;Mammalia;Indet;vertebra;;;fr;;;tr;;;;290;200,0;500,5;200/500;3
+1;0.54;Mammalia;Indet;costa;;;fr;;;tr;;;;290;200,0;500,5;200/500;3
+1;0.8;Mammalia;Indet;costa;;;fr;;;tr;;iuv;cut;290;200,0;500,5;200/500;3
+1;0.05;Indet;Indet;indet;;;fr;;;;wc;;;291;200,5;500,0;200/500;3
+2;0.19;Indet;Indet;indet;;;fr;;;;wnc;;;291;200,5;500,0;200/500;3
+3;0.61;Mammalia;Indet;indet;;;fr;;;;wnc;;;291;200,5;500,0;200/500;3
+1;0.03;Mammalia;Indet;dens;;;fr;ruminant enamel outer layer;;de;;;;292;200,5;500,0;200/500;3
+1;0.17;Indet;Indet;indet;;;fr;;;;wnc;;;296;200,5;500,5;200/500;3
+1;0.23;Indet ;Indet;indet;;;fr;;;;;;;428;201.5;505;201/505;3
+1;0.37;Mammalia ;Indet;indet;;;fr;;;;;;;428;201,5;505,0;201/505;3
+4;0.89;Mammalia ;Indet;os longum;;;fr;;; ex ;;;;428;201.5;505;201/505;3
+17;2.9;Mammalia ;Indet;indet;;;fr;;;;;;;428;201.5;505;201/505;3
+1;0.05;Aves;Indet;indet;;;fr;;;;;;;431;201,5;505,5;201/505;3
+2;0.65;Mammalia;Indet;indet;;;fr;;;;wochre;;;431;201,5;505,5;201/505;3
+1;0.09;Mammalia;Indet;dens;;;fr;;;de;;;;432;201,5;505,5;201/505;3
+1;0.27;Mammalia;Indet;indet;;;fr;;;;wnc;;;435;200,0;506,0;200/506;3
+2;0.18;Indet;Indet;indet;;;fr;;;;;;;436;200,0;506,5;200/506;3
+1;1.21;Mammalia;Bos taurus;dens;dp;;fr;**possible cavity;;de;;;;437;200,0;506,5;200/506;3
+1;0.04;Indet;Indet;indet;;;fr;;;;wc;;;438;200,5;506,0;200/506;3
+3;0.21;Indet;Indet;indet;;;fr;;;;wc;;;443;201,0;506,5;201/506;3
+1;0.02;Mammalia;Indet;indet;facies articularis;;fr;not burned;;;nb;;;443;201,0;506,5;201/506;3
+1;0.5;Mammalia;Indet;os longum;;;fr;;;ex;wnc;;;443;201,0;506,5;201/506;3
+1;0.28;Mammalia;Indet;indet;;;fr;;;;;;;444;201,5;506,0;201/506;3
+3;0.05;Indet;Indet;indet;;;fr;;;;;;;446;201,5;506,5;201/506;3
+1;0.13;Indet;Indet;indet;;;fr;;;;wc;;;446;201,5;506,5;201/506;3
+1;10.62;Mammalia;Phocidae;scapula;med fossa glenoidea;sin;fr;;;tr;;;;446;201,5;506,5;201/506;3
+1;0.89;Mammalia;Indet;dens;p max;dx;fr;;;de;;;;446;201,5;506,5;201/506;3
+1;0.19;Mammalia;Indet;indet;;;fr;;;;;;;446;201,5;506,5;201/506;3
+1;0.17;Mammalia;Indet;indet;;;fr;;;;;;;446;201,5;506,5;201/506;3
+1;0.13;Indet;Indet;indet;;;fr;;;;wc;;;447;200,0;507,0;200/507;3
+1;0.19;Mammalia;Indet;indet;;;fr;;;;wnc;;;447;200,0;507,0;200/507;3
+12;1.21;Mammalia;Indet;dens;;;fr;ruminant;;de;;;;448;200,0;507,0;200/507;3
+2;0.24;Mammalia;Indet;dens;;;fr;non erupted permanent ruminant;;de;;iuv;;448;200,0;507,0;200/507;3
+1;1.4;Mammalia;Indet;dens;;;fr;ruminant;;de;;;;448;200,0;507,0;200/507;3
+1;0.04;Mammalia;Indet;indet;;;fr;;;;;;;448;200,0;507,0;200/507;3
+1;0.06;Indet;Indet;indet;;;fr;;;;wnc;;;449;200,0;507,5;200/507;3
+1;0.1;Mammalia;Indet;indet;;;fr;;;;wnc;;;449;200,0;507,5;200/507;3
+2;0.23;Mammalia;Indet;costa;;;fr;;;tr;wbla;;;451;200,5;507,0;200/507;3
+4;1.07;Mammalia;Indet;indet;;;fr;;;;wnc;;;451;200,5;507,0;200/507;3
+22;0.56;Indet;Indet;indet;;;fr;;;;;;;452;200,5;507,0;200/507;3
+21;3.11;Mammalia;Indet;indet;;;fr;;;;;;;452;200,5;507,0;200/507;3
+2;0.64;Mammalia;Indet;vertebra;;;fr;;;tr;;;;452;200,5;507,0;200/507;3
+1;0.05;Mammalia;Indet;indet;;;fr;facies articularis;;;;;;452;200,5;507,0;200/507;3
+1;0.18;Mammalia;Indet;indet;;;fr;;;trcr;;;;452;200,5;507,0;200/507;3
+2;0.09;Indet;Indet;indet;;;fr;;;;;;;452;200,5;507,0;200/507;3
+2;0.58;Mammalia;Indet;dens;;;fr;ruminant;;;;;;452;200,5;507,0;200/507;3
+1;0.58;Mammalia;Ovis/Capra;os longum;facies articularis;;fr;;;ex;;;;452;200,5;507,0;200/507;3
+1;0.65;Mammalia;Indet;indet;;;fr;;;;;;;452;200,5;507,0;200/507;3
+2;0.35;Indet;Indet;indet;;;fr;;;;wgra;;;454;200,5;507,5;200/507;3
+1;0.23;Mammalia;Indet;indet;;;fr;;;;wnc;;cut;454;200,5;507,5;200/507;3
+2;1.09;Mammalia;Indet;indet;;;fr;;;;wnc;;;454;200,5;507,5;200/507;3
+1;0.09;Mammalia;Indet;indet;facies articularis;;fr;;;;wgra;;;454;200,5;507,5;200/507;3
+1;0.65;Mammalia;Indet;indet;;;fr;;;;wgra;;;454;200,5;507,5;200/507;3
+4;0.05;Indet;Indet;indet;;;fr;;;;;;;455;200,5;507,5;200/507;3
+1;0.01;Indet;Indet;indet;;;;;1;;;;;913;200,0;503,0;200/503;6
+1;0.01;Indet;Indet;indet;;;;;1;;;;;913;200,0;503,0;200/503;6
+1;0.03;Indet;Indet;indet;;;;;1;;;;;913;200,0;503,0;200/503;6
+1;0.05;Indet;Indet;indet;;;;;2;;;;;913;200,0;503,0;200/503;6
+1;0.37;Mammalia;Indet;indet;;;;;4;;;;;913;200,0;503,0;200/503;6
+1;0.27;Mammalia;Indet;indet;facies articularis excl epiph;;;;4;;;iuv;;913;200,0;503,0;200/503;6
+1;0.01;Indet;Indet;indet;;;;;1;;;;;915;200,0;503,5;200/503;6
+1;0.15;Indet;Indet;indet;;;;;3;;;;;915;200,0;503,5;200/503;6
+1;0.21;Indet;Indet;os longum;;;;charred brown;3;;brobla;;;915;200,0;503,5;200/503;6
+1;0.03;Indet;Indet;indet;;;;;2;;;;;915;200,0;503,5;200/503;6
+1;0.01;Teleostei;Indet;indet;;;;;1;;;;;915;200,0;503,5;200/503;6
+1;0.01;Teleostei;Indet;indet;;;;;1;;;;;915;200,0;503,5;200/503;6
+1;0.01;Teleostei;Indet;indet;;;;;1;;;;;915;200,0;503,5;200/503;6
+1;0.08;Indet;Indet;indet;;;fr;;2;;;;;917;200,5;503,0;200/503;6
+1;0.05;Indet;Indet;indet;;;fr;;2;;;;;917;200,5;503,0;200/503;6
+1;0.07;Indet;Indet;indet;;;fr;;2;;;;;917;200,5;503,0;200/503;6
+1;0.13;Mammalia;Indet;indet;;;fr;;3;;;;;917;200,5;503,0;200/503;6
+1;0.16;Mammalia;Indet;indet;;;fr;;3;;;;;917;200,5;503,0;200/503;6
+1;0.22;Mammalia;Indet;indet;;;fr;;3;;;;;917;200,5;503,0;200/503;6
+1;0.21;Mammalia;Indet;facies articularis excl epiph;;;fr;;4;;;iuv;;917;200,5;503,0;200/503;6
+1;0.31;Mammalia;Indet;facies articularis excl epiph;;;fr;;4;;;iuv;;917;200,5;503,0;200/503;6
+1;0.08;Mammalia;Indet;facies articularis excl epiph;;;fr;;2;;;iuv;;917;200,5;503,0;200/503;6
+1;0.03;Mammalia;Indet;facies articularis;;;fr;;1;;;;;917;200,5;503,0;200/503;6
+1;0.16;Mammalia;Indet;facies articularis;;;fr;;3;;;;;917;200,5;503,0;200/503;6
+1;0.56;Mammalia;Indet;facies articularis excl epiph;;;fr;;6;;;iuv;;917;200,5;503,0;200/503;6
+1;0.31;Mammalia;Indet;facies articularis;;;fr;;3;;;;;917;200,5;503,0;200/503;6
+1;0.35;Mammalia;Indet;costa;;;fr;;4;;;;;917;200,5;503,0;200/503;6
+1;2.2;Mammalia;Indet;;;;;*leukaluu possu?;7;;;;;917;200,5;503,0;200/503;6
+1;0.18;Mammalia;Indet;vertebra;;;fr;;3;tr;;;;917;200,5;503,0;200/503;6
+1;5.49;Mammalia;Phocidae;costa;med facies articularis;dx;fr;kuvassa phoca vitulina;13;;;;;917;200,5;503,0;200/503;6
+1;0.03;Aves;Indet;indet;;;;;2;;;;;917;200,5;503,0;200/503;6
+1;0.13;Aves;Anatidae;femur;caput;sin;fr;large as Somateria m;2;;;;;917;200,5;503,0;200/503;6
+1;0.53;Mammalia;Phocidae;costa;med facies articularis;sin;fr;;5;;;;;917;200,5;503,0;200/503;6
+1;0.12;Mammalia;Indet;indet;;;fr;;3;;;;;917;200,5;503,0;200/503;6
+1;0.53;Indet;Indet;indet;;;fr;aves or small mammal;4;;;;;917;200,5;503,0;200/503;6
+1;0.01;Aves;Laridae;sternum;;;fr;*fr of next;1;;;;;917;200,5;503,0;200/503;6
+1;0.13;Aves;Laridae;sternum;;;fr;*prev fr of this sterna hirundo is match or larus minutus *count;5;;;;;917;200,5;503,0;200/503;6

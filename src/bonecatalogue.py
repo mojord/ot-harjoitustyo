@@ -76,3 +76,34 @@ class Bonecatalogue:
                 bonelist.append((bone.ossum, bone.findnr))
         return f"{species} specimens: {count}, identified bones: {bonelist}"
 
+    def count_juveniles_by_species(self):
+        juveniles = {}
+#        name = ""
+        for bone in self.file:
+            if bone.iuv == "iuv":
+                if bone.species in juveniles:
+#                if bone.species == "Indet":
+#                    name = bone.classis
+#                else:
+#                    name = bone.species
+#                if name not in juveniles:
+#                    juveniles[name][0] = 0
+#                juveniles[name][0] += 1
+                    juveniles[bone.species][0] += int(bone.nisp)
+                    if "dens" in bone.ossum:
+                        juveniles[bone.species][1] += int(bone.nisp)
+                    if "epiph" in bone.element:
+                        juveniles[bone.species][2] += int(bone.nisp)
+                if bone.species not in juveniles:
+                    juveniles[bone.species] = [int(bone.nisp),0,0]
+                    if "dens" in bone.ossum:
+                        juveniles[bone.species][1] = int(bone.nisp)
+                    if "epiph" in bone.element:
+                        juveniles[bone.species][2] = int(bone.nisp)
+        for key in juveniles:
+            count = 0
+            bonename = key
+            no = juveniles[key][0]
+            teethno = juveniles[key][1]
+            epiphysesno = juveniles[key][2]
+            return f"{bonename} {no} specimens of which {teethno} teeth and {epiphysesno} epiphyses or juvenile articular faces"

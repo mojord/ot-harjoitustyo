@@ -14,10 +14,11 @@ class BoneatorTextInterface:
         print("Press 0 to quit, m to see manual.")
         print("1 Show file. 2 Count identifed species.")
         print("3 Count NISP by class. 4 Show identified bones of given species.")
-        print("5 Count NISP and weight by class")
+        print("5 Count NISP and weight by class. 6 Count juvenile specimens.")
 
     def read_file(self):
-        print("Welcome!Please use filenames bartsbones.csv or testaus.csv for trying out this program.")
+        print("Welcome!Please use filenames testaus.csv(simplest), bartsbones.csv or barts2.csv(largest) for trying out this program.")
+        print("Note that option 6 gives faulty results due to errors in csv files. This will be corrected in due time.")
         file = (input("Hello, please give csv filename: "))
         self.catalogue.read_file(file)
 
@@ -44,6 +45,8 @@ class BoneatorTextInterface:
                 print(self.catalogue.give_species(species))
             elif option == "5":
                 self.catalogue.count_nisp_and_weight()
+            elif option == "6":
+                print(self.catalogue.count_juveniles_by_species())
 
 application = BoneatorTextInterface()
 application.do()
