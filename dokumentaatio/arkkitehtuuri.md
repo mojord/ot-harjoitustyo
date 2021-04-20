@@ -2,4 +2,4 @@
 
 ## Pakkausrakenne
 
-! [rakenne](architecture.png)
+![rakenne](.kuvat/architecture.png)
