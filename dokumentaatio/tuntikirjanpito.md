@@ -10,3 +10,5 @@ päivä | aika | mitä tehty
 12.4. | 1    | koodin läpikäynti ja src koodeineen githubiin
 13.4. | 7    | pajayritys ja polkuongelman selvitysyrityksiä
 14.4. | 3    | poetry-ongelmien ja testien korjaus saadun polkutiedon avulla
+16.4. | 3    | pylint, coverage, toiminnan tarkistelua
+20.4. | 3    | uusi metodi sovellukseen
