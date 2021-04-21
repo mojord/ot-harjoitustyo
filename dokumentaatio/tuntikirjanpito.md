@@ -13,9 +13,9 @@ päivä | aika | mitä tehty
 16.4. | 3    | pylint, coverage, toiminnan tarkistelua
 20.4. | 3    | uusi metodi sovellukseen
 20.4. | 1    | arkkitehtuurikuvaus
+21.4  | 4.5  | tehtiin graafinen käyttöliittymä
 
 
 
 
-
-YHT.   36 tuntia
+YHT.   40.5 tuntia
