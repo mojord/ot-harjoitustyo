@@ -2,7 +2,7 @@ from invoke import task
 
 @task
 def start(ctx):
-    ctx.run("python3 src/textinterface.py")
+    ctx.run("python3 src/gui.py")
 
 @task
 def test(ctx):
