@@ -7,6 +7,7 @@ from plotter import *
 
 dirname = os.path.dirname(__file__)
 
+
 class Bonecatalogue:
 
     def __init__(self):
@@ -16,6 +17,7 @@ class Bonecatalogue:
         path = os.path.join(dirname, file)
         reader = FileReader(path)
         self.file = reader.read()
+
     def kokeilu(self):
         return f"buenos dias"
 
@@ -47,7 +49,6 @@ class Bonecatalogue:
 
 #        plot = Plotter()
 #        plot.bar_chart_nsp_and_weight(nispweight)
-
 
     def count_nisp_by_class(self):
         nispclasses = {}
@@ -82,20 +83,20 @@ class Bonecatalogue:
         for bone in self.file:
             if bone.iuv == "iuv":
                 if bone.species in juveniles:
-#                if bone.species == "Indet":
-#                    name = bone.classis
-#                else:
-#                    name = bone.species
-#                if name not in juveniles:
-#                    juveniles[name][0] = 0
-#                juveniles[name][0] += 1
+                    #                if bone.species == "Indet":
+                    #                    name = bone.classis
+                    #                else:
+                    #                    name = bone.species
+                    #                if name not in juveniles:
+                    #                    juveniles[name][0] = 0
+                    #                juveniles[name][0] += 1
                     juveniles[bone.species][0] += int(bone.nisp)
                     if "dens" in bone.ossum:
                         juveniles[bone.species][1] += int(bone.nisp)
                     if "epiph" in bone.element:
                         juveniles[bone.species][2] += int(bone.nisp)
                 if bone.species not in juveniles:
-                    juveniles[bone.species] = [int(bone.nisp),0,0]
+                    juveniles[bone.species] = [int(bone.nisp), 0, 0]
                     if "dens" in bone.ossum:
                         juveniles[bone.species][1] = int(bone.nisp)
                     if "epiph" in bone.element:

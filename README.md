@@ -8,6 +8,11 @@
 
 ## Sovelluksen käyttäminen komentorivillä
 
+### Riippuvuuksien asentaminen:
+```bash
+poetry install
+```
+
 ### Ohjelman voi suorittaa komennolla:
 ```bash
 poetry run invoke start

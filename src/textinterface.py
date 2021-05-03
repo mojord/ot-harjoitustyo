@@ -8,7 +8,7 @@ class BoneatorTextInterface:
     def __init__(self):
         self.file = []
         self.catalogue = Bonecatalogue()
-    
+
     def manual(self):
         print("Options: ")
         print("Press 0 to quit, m to see manual.")
@@ -47,6 +47,7 @@ class BoneatorTextInterface:
                 self.catalogue.count_nisp_and_weight()
             elif option == "6":
                 print(self.catalogue.count_juveniles_by_species())
+
 
 application = BoneatorTextInterface()
 application.do()
