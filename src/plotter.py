@@ -35,3 +35,9 @@ class Plotter:
 
 
 #        plt.show()
+
+    def species_breakdown_bar_chart(self, dictionary):
+        keys = dictionary.keys()
+        values = dictionary.values()
+#        plt.bar(keys, values)
+#        plt.show()

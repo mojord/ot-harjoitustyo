@@ -4,11 +4,14 @@ from bonecatalogue import *
 
 
 class GUI:
+    """Class for graphic interface.
+    """
     def __init__(self, root):
         self._root = root
         self.catalogue = Bonecatalogue()
         self._csv_entry = None
         self._species_entry = None
+        self._classis_entry = None
 
     def start(self):
         headerlabel = Label(master=self._root, text="Welcome to Boneator!",
@@ -28,6 +31,12 @@ class GUI:
         self._species_entry = Entry(master=self._root)
         species_enterbutton = Button(master=self._root, text="Click to enter species.",
                                      bg=entercolor, bd=5, command=self.handle_species_entry, font=buttonfont)
+        
+        classis_input_label = Label(
+            master=self._root, text="Enter class to find number of identified species.", font=buttonfont)
+        self._classis_entry = Entry(master=self._root)
+        classis_enterbutton = Button(master=self._root, text="Click to enter class.",
+                                     bg=entercolor, bd=5, command=self.handle_classis_entry, font=buttonfont)
 
         testerInstructions_label = Label(
             master=self._root, text="NOTE: Please use csv files testaus.csv (simplest), bartsbones.csv or barts2.csv (largest).", font="CaptionFont 15")
@@ -45,8 +54,6 @@ class GUI:
         button_count_juveniles_by_species = Button(master=self._root, text="Count juveniles by species",
                                                    bg=buttoncolor, command=self.handle_count_juveniles_by_species_click, font=buttonfont)
 
-        headerlabel.grid(row=0, column=0, columnspan=4, padx=15, pady=15)
-
         csv_input_label.grid(
             row=1, column=0, sticky=(constants.E, constants.W))
         self._csv_entry.grid(row=1, column=1, )
@@ -57,7 +64,12 @@ class GUI:
         self._species_entry.grid(row=6, column=1, )
         species_enterbutton.grid(row=6, column=2)
 
-        testerInstructions_label.grid(row=20, column=0, columnspan=4, pady=15)
+        classis_input_label.grid(
+            row=8, column=0, sticky=(constants.E, constants.W))
+        self._classis_entry.grid(row=8, column=1, )
+        classis_enterbutton.grid(row=8, column=2)
+
+        testerInstructions_label.grid(row=30, column=0, columnspan=4, pady=15)
 
         button_quit.grid(row=10, column=2, pady=20)
         button_show_file.grid(row=2, column=0, pady=20)
@@ -82,6 +94,10 @@ class GUI:
         species_name = self._species_entry.get()
         print(self.catalogue.give_species(species_name))
 
+    def handle_classis_entry(self):
+        classis_name = self._classis_entry.get()
+        print(self.catalogue.give_species_breakdown_for_class(classis_name))
+
     def handle_show_file_click(self):
         self.catalogue.show_file()
 
@@ -96,6 +112,7 @@ class GUI:
 
     def handle_count_juveniles_by_species_click(self):
         print(self.catalogue.count_juveniles_by_species())
+
 
 
 window = Tk()

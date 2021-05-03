@@ -9,23 +9,37 @@ dirname = os.path.dirname(__file__)
 
 
 class Bonecatalogue:
+    """Class for producing statistics from osteological analysis csv
+    """
 
     def __init__(self):
         self.file = []
 
     def read_file(self, file):
+        """Reads csv into a list of bone objects
+        Args:
+            file: given csv file
+        """
         path = os.path.join(dirname, file)
         reader = FileReader(path)
         self.file = reader.read()
 
     def kokeilu(self):
+        """A provisional mystery method for testing tests
+        Returns:
+            Buenos dias string
+        """
         return f"buenos dias"
 
     def show_file(self):
+        """Prints the list of bone objects
+        """
         for bone in self.file:
             print(bone)
 
     def count_species(self):
+        """Counts and prints species found in list
+        """
         specieslist = {}
         for bone in self.file:
             if bone.species != "Indet":
@@ -37,6 +51,8 @@ class Bonecatalogue:
         print(f"{len(specieslist)} species")
 
     def count_nisp_and_weight(self):
+        """Counts and prints the number and weight of finds in each animal class
+        """ 
         nispweight = {}
         for bone in self.file:
             if bone.classis in nispweight:
@@ -69,6 +85,10 @@ class Bonecatalogue:
  #       plot.classis_bar_chart(nispclasses)
 
     def give_species(self, species):
+        """Counts and lists bones for given species.
+        Returns:
+            Species, number and list of bones in string format
+        """
         count = 0
         bonelist = []
         for bone in self.file:
@@ -108,3 +128,16 @@ class Bonecatalogue:
             teethno = juveniles[key][1]
             epiphysesno = juveniles[key][2]
             return f"{bonename} {no} specimens of which {teethno} teeth and {epiphysesno} epiphyses or juvenile articular faces"
+    
+    def give_species_breakdown_for_class(self, classis):
+        specieslist = {}            
+        for bone in self.file:
+            if bone.classis == classis:
+                if bone.species not in specieslist:
+                    specieslist[bone.species] = 0
+                specieslist[bone.species] += int(bone.nisp)
+        for key, value in specieslist.items():
+            print(f"{key}, {value}")
+        
+#        plot = Plotter()
+#        plot.species_breakdown_bar_chart(specieslist)
