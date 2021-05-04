@@ -47,4 +47,5 @@ Käytettävissä olevan ajan puitteissa perusversioon voidaan lisätä toiminnal
 
 - tekstikäyttöliittymä
 - sovellus ja osa sen metodeista
-- graafien tuottaminen osalle metodeista, tämä ei näy ohjelmaa ajettaessa, koska poetryn ja matplotlibin yhteensopivuusongelma on vielä ratkaisematta
+- lisää metodeja, esim. eläinlajien laskeminen luokittain
+- graafien tuottaminen osalle metodeista
