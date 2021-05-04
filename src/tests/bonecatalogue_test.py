@@ -1,7 +1,7 @@
 
 import unittest
 import os
-from bonecatalogue import Bonecatalogue
+from services.bonecatalogue import Bonecatalogue
 TESTDATA = os.path.join(os.path.dirname(__file__), "testaus.csv")
 
 

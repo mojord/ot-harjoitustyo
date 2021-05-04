@@ -14,8 +14,13 @@ päivä | aika | mitä tehty
 20.4. | 3    | uusi metodi sovellukseen
 20.4. | 1    | arkkitehtuurikuvaus
 21.4  | 4.5  | tehtiin graafinen käyttöliittymä
+23.4. | 5    | poetryn matplotlib-ongelman ratkaisuyrityksiä
+29.4. | 2    | poetryn matplotlib-ongelman ratkaisuyrityksiä
+3.5.  | 2    | uusi metodi ohjelmaan
+3.5.  | 5    | poetryn matplotlib-ongelman ratkaisuyrityksiä
+4.5.  | 3    | poetryn matplotlib-ongelman ratkaisuyrityksiä
+4.5   | 2    | poetryn matplotlib-ongelman ratkaiseminen
+4.5.  | 1    | pakkausrakenteen järjestely ja matplotlib kommentit pois
 
 
-
-
-YHT.   40.5 tuntia
+YHT.   41.5 tuntia

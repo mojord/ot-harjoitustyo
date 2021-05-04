@@ -1,7 +1,7 @@
 #import sqlite3
 import os
-from reader import *
-from plotter import *
+from tools.reader import *
+from tools.plotter import Plotter
 #db = sqlite.connect("testi.db")
 #db.isolation_level = None
 
@@ -63,8 +63,8 @@ class Bonecatalogue:
         for key, value in nispweight.items():
             print(f"{key}, {value}")
 
-#        plot = Plotter()
-#        plot.bar_chart_nsp_and_weight(nispweight)
+        plot = Plotter()
+        plot.bar_chart_nsp_and_weight(nispweight)
 
     def count_nisp_by_class(self):
         nispclasses = {}
@@ -81,8 +81,8 @@ class Bonecatalogue:
             if key != "Indet":
                 identified += int(value)
         print(f"{identified} specimens identified by class, {indets} indetermined")
- #       plot = Plotter()
- #       plot.classis_bar_chart(nispclasses)
+        plot = Plotter()
+        plot.classis_bar_chart(nispclasses)
 
     def give_species(self, species):
         """Counts and lists bones for given species.
@@ -139,5 +139,5 @@ class Bonecatalogue:
         for key, value in specieslist.items():
             print(f"{key}, {value}")
         
-#        plot = Plotter()
-#        plot.species_breakdown_bar_chart(specieslist)
+        plot = Plotter()
+        plot.species_breakdown_bar_chart(specieslist)

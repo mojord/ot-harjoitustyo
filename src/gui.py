@@ -1,6 +1,6 @@
 
 from tkinter import *
-from bonecatalogue import *
+from services.bonecatalogue import *
 
 
 class GUI:
