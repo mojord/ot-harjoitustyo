@@ -6,6 +6,7 @@
 
 [Arkkitehtuurikuvaus](https://github.com/mojord/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[Käyttöohje] (https://github.com/mojord/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 ## Sovelluksen käyttäminen komentorivillä
 
 ### Riippuvuuksien asentaminen:
