@@ -21,6 +21,7 @@ päivä | aika | mitä tehty
 4.5.  | 3    | poetryn matplotlib-ongelman ratkaisuyrityksiä
 4.5   | 2    | poetryn matplotlib-ongelman ratkaiseminen
 4.5.  | 1    | pakkausrakenteen järjestely ja matplotlib kommentit pois
+7.5.  | 3    | uusi metodi ja matplotlib-opettelua
+7.5.  | 2    | uuden testitiedoston valmistelua
 
-
-YHT.   41.5 tuntia
+YHT.   46.5 tuntia

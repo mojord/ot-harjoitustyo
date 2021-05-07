@@ -13,7 +13,7 @@ class BoneatorTextInterface:
         print("1 Show file. 2 Count identifed species.")
         print("3 Count NISP by class. 4 Show identified bones of given species.")
         print("5 Count NISP and weight by class. 6 Count juvenile specimens.")
-        print("7 Give species breakdown for class.")
+        print("7 Give species breakdown for class. 8 Give total and not burned/burned share.")
 
     def read_file(self):
         print("Welcome!Please use filenames testaus.csv(simplest), bartsbones.csv or barts2.csv(largest) for trying out this program.")
@@ -49,6 +49,8 @@ class BoneatorTextInterface:
             elif option == "7":
                 classis = input("Give class: ")
                 print(self.catalogue.give_species_breakdown_for_class(classis))
+            elif option == "8":
+                print(self.catalogue.all_burned_and_not())
 
 
 application = BoneatorTextInterface()

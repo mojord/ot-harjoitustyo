@@ -22,8 +22,8 @@ class FileReader():
 #                weight = parts[4]
 #                bodypart = parts[5]
 
-                nisp = parts[0]
-                weight = parts[1]
+                nisp = int(parts[0])
+                weight = float(parts[1])
                 classis = parts[2]
                 species = parts[3]
                 ossum = parts[4]
@@ -36,11 +36,11 @@ class FileReader():
                 burndegree = parts[11]
                 iuv = parts[12]
                 cut = parts[13]
-                findnr = parts[14]
+                findnr = int(parts[14])
                 x = parts[15]
                 y = parts[16]
-                context = [17]
-                layer = [18]
+                context = parts[17]
+                layer = int(parts[18])
 
                 bones.append(Bone(nisp, weight, classis, species, ossum, element, side, fragment,
                              comment, sizeclass, part, burndegree, iuv, cut, findnr, x, y, context, layer))

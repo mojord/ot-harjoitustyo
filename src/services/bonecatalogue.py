@@ -43,9 +43,10 @@ class Bonecatalogue:
         specieslist = {}
         for bone in self.file:
             if bone.species != "Indet":
-                if bone.species not in specieslist:
-                    specieslist[bone.species] = 0
-                specieslist[bone.species] += 1
+                if bone.species in specieslist:
+                    specieslist[bone.species] += bone.nisp
+                if bone.species not in specieslist:                
+                    specieslist[bone.species] = bone.nisp
         for key, value in specieslist.items():
             print(f"{key}, {value}")
         print(f"{len(specieslist)} species")
@@ -141,3 +142,21 @@ class Bonecatalogue:
         
         plot = Plotter()
         plot.species_breakdown_bar_chart(specieslist)
+
+    def all_burned_and_not(self):
+        nsp = 0
+        weight = 0
+        burnednsp = 0
+        burnedweight = 0
+        
+        for bone in self.file:
+            nsp += bone.nisp
+            weight += bone.weight
+            if bone.burndegree != "":
+                burnednsp += bone.nisp
+                burnedweight += bone.weight
+        
+        burned_nsp_percent = (burnednsp / nsp) * 100
+        burned_weight_percent = (burnedweight / weight) * 100
+
+        return f"ALL NSP: {nsp} ALL WEIGHT: {weight} grs\nNOT BURNED NSP: {nsp-burnednsp} | PER CENT NSP: {100-burned_nsp_percent:.0f} | NOT BURNED WEIGHT: {weight - burnedweight} grs | PER CENT WEIGHT: {100-burned_weight_percent:.0f}\nBURNED NSP: {burnednsp} | PER CENT NSP: {burned_nsp_percent:.0f} | BURNED WEIGHT: {burnedweight} grs | PER CENT WEIGHT: {burned_weight_percent:.0f}"

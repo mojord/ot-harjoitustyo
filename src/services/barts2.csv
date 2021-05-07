@@ -21,10 +21,10 @@ nsp;paino;luokka;laji;luu;osa;puoli;kokonainen;huomioita;kokoluokka;part;burn;iu
 3;0.61;Mammalia;Indet;indet;;;fr;;;;wnc;;;291;200,5;500,0;200/500;3
 1;0.03;Mammalia;Indet;dens;;;fr;ruminant enamel outer layer;;de;;;;292;200,5;500,0;200/500;3
 1;0.17;Indet;Indet;indet;;;fr;;;;wnc;;;296;200,5;500,5;200/500;3
-1;0.23;Indet ;Indet;indet;;;fr;;;;;;;428;201.5;505;201/505;3
-1;0.37;Mammalia ;Indet;indet;;;fr;;;;;;;428;201,5;505,0;201/505;3
-4;0.89;Mammalia ;Indet;os longum;;;fr;;; ex ;;;;428;201.5;505;201/505;3
-17;2.9;Mammalia ;Indet;indet;;;fr;;;;;;;428;201.5;505;201/505;3
+1;0.23;Indet;Indet;indet;;;fr;;;;;;;428;201.5;505;201/505;3
+1;0.37;Mammalia;Indet;indet;;;fr;;;;;;;428;201,5;505,0;201/505;3
+4;0.89;Mammalia;Indet;os longum;;;fr;;; ex ;;;;428;201.5;505;201/505;3
+17;2.9;Mammalia;Indet;indet;;;fr;;;;;;;428;201.5;505;201/505;3
 1;0.05;Aves;Indet;indet;;;fr;;;;;;;431;201,5;505,5;201/505;3
 2;0.65;Mammalia;Indet;indet;;;fr;;;;wochre;;;431;201,5;505,5;201/505;3
 1;0.09;Mammalia;Indet;dens;;;fr;;;de;;;;432;201,5;505,5;201/505;3
