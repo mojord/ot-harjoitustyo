@@ -1,5 +1,7 @@
 # Käyttöohje
 
+Ohjelma on tarkoitettu osteoarkeologisten raporttien tarvitsemien taulukoiden, kuvaajien ja laskennan suorittamiseen.
+
 ## Käynnistäminen
 
 Asenna riippuvuudet komennolla:

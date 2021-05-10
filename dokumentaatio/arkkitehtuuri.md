@@ -27,4 +27,4 @@ Käyttöliittymästä valitaan haluttu vaihtoehto. Graafisen käyttöliittymän 
 
 ## Kehitettävää
 
-Käyttöliittymät voidaan tulevaisuudessa sijoittaa omaan ui-pakkaukseen. Kysymykseksi jää, mihin hierarkkisesti korkein olioluokka Bone on sijoitettava. Periaatteessa graafinen käyttöliitymä tässä muodossaan on jossain määrin tarpeeton ja sovellus voisi myös toimia niin, että se tuottaa kaiken raporttiin tarvittavan informaation "nappia painamalla".
+Käyttöliittymät voidaan tulevaisuudessa sijoittaa omaan ui-pakkaukseen. Kysymykseksi jää, mihin hierarkkisesti korkein olioluokka Bone on sijoitettava. Periaatteessa graafinen käyttöliitymä tässä muodossaan on jossain määrin keinotekoinen ja sovellus voisi myös toimia niin, että se tuottaa kaiken raporttiin tarvittavan informaation "nappia painamalla".
