@@ -15,4 +15,4 @@ Järjestelmätestaus suoritettiin manuaalisesti. Sovellus asennettiin ohjeen muk
 
 ## Parannettavaa
 
-Osa sovelluksen metodeista sekä tulostaa että palauttaa tietoja. Joidenkine metodien palautus palvelee myöhemmin lisättäviä kuvaajatoimintoja, mutta ei tällä hetkellä anna mitään käyttäjälle.
+Osa sovelluksen metodeista sekä tulostaa että palauttaa tietoja. Joidenkin metodien palautus palvelee myöhemmin lisättäviä kuvaajatoimintoja, mutta ei tällä hetkellä anna mitään käyttäjälle.

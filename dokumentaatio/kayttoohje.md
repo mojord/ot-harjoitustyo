@@ -21,4 +21,4 @@ poetry run invoke start
 Sovellus käynnistyy näkymään, joka sisältää toimintonappulat ja laatikot syötteitä varten.
 Aloitus tapahtuu antamalla käsiteltävän csv-tiedoston nimi ja klikkaamalla syötelaatikon vieressä olevaa painiketta.
 
-Tämän jälkeen tiedostosta voidaan laskea tilastoja ja tuottaa graafeja painamalla haluttuja painikkeita tai antamalla syötteitä.
+Tämän jälkeen tiedostosta voidaan laskea tilastoja ja tuottaa graafeja painamalla haluttuja painikkeita tai antamalla syötteitä. Tulostus tapahtuu konsoliin.
