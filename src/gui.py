@@ -46,13 +46,13 @@ class GUI:
         button_show_file = Button(master=self._root, text="Show file",
                                   bg=buttoncolor, command=self.handle_show_file_click, font=buttonfont)
         button_count_species = Button(master=self._root, text="Count species",
-                                      bg=buttoncolor, command=self.handle_count_species_click, font=buttonfont)
-        button_count_nisp_by_class = Button(master=self._root, text="Count nisp by class",
-                                            bg=buttoncolor, command=self.handle_count_nisp_by_class_click, font=buttonfont)
-        button_count_nisp_and_weight = Button(master=self._root, text="Count nisp and weight",
-                                              bg=buttoncolor, command=self.handle_count_nisp_and_weight_click, font=buttonfont)
+                                      bg=buttoncolor, command=self.handle_count_species_click, font=buttonfont)       
+        button_count_nisp_and_weight_by_class = Button(master=self._root, text="Count nisp and weight",
+                                              bg=buttoncolor, command=self.handle_count_nisp_and_weight_by_class_click, font=buttonfont)
         button_count_juveniles_by_species = Button(master=self._root, text="Count juveniles by species",
                                                    bg=buttoncolor, command=self.handle_count_juveniles_by_species_click, font=buttonfont)
+        button_all_burned_and_not = Button(master=self._root, text="Give breakdown of not burned and burned bones",
+                                            bg=buttoncolor, command=self.handle_all_burned_and_not_click, font=buttonfont)
 
         csv_input_label.grid(
             row=1, column=0, sticky=(constants.E, constants.W))
@@ -74,10 +74,10 @@ class GUI:
         button_quit.grid(row=10, column=2, pady=20)
         button_show_file.grid(row=2, column=0, pady=20)
         button_count_species.grid(row=2, column=1)
-        button_count_nisp_by_class.grid(row=2, column=2)
-        button_count_nisp_and_weight.grid(row=4, column=0)
+        button_count_nisp_and_weight_by_class.grid(row=4, column=0)
         button_count_juveniles_by_species.grid(
             row=4, column=1, pady=15, sticky=(constants.W))
+        button_all_burned_and_not.grid(row=2, column=2)
 
 
 #        self._root.grid_columnconfigure(0, weight=1, minsize=300)
@@ -104,14 +104,14 @@ class GUI:
     def handle_count_species_click(self):
         self.catalogue.count_species()
 
-    def handle_count_nisp_by_class_click(self):
-        self.catalogue.count_nisp_by_class()
-
-    def handle_count_nisp_and_weight_click(self):
-        self.catalogue.count_nisp_and_weight()
+    def handle_count_nisp_and_weight_by_class_click(self):
+        self.catalogue.count_nisp_and_weight_by_class()
 
     def handle_count_juveniles_by_species_click(self):
         print(self.catalogue.count_juveniles_by_species())
+    
+    def handle_all_burned_and_not_click(self):
+        self.catalogue.all_burned_and_not()
 
 
 

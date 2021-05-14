@@ -3,27 +3,33 @@ from services.bonecatalogue import *
 
 
 class BoneatorTextInterface:
+    """Class for running text interface
+    """
     def __init__(self):
         self.file = []
         self.catalogue = Bonecatalogue()
 
     def manual(self):
+        """Prints manual
+        """
         print("Options: ")
         print("Press 0 to quit, m to see manual.")
         print("1 Show file. 2 Count identifed species.")
-        print("3 Count NISP by class. 4 Show identified bones of given species.")
-        print("5 Count NISP and weight by class. 6 Count juvenile specimens.")
-        print("7 Give species breakdown for class. 8 Give total and not burned/burned share.")
+        print("3 Count NISP and weight by class. 4 Show identified bones of given species.")
+        print("5 Count juvenile specimens. 6 Give species breakdown for class.")
+        print("7 Give total and not burned/burned share.")
 
     def read_file(self):
+        """Takes filename input and calls catalogue read method.
+        """
         print("Welcome!Please use filenames testaus.csv(simplest), bartsbones.csv or barts2.csv(largest) for trying out this program.")
-        print("Note that option 6 gives faulty results due to errors in csv files. This will be corrected in due time.")
         file = (input("Hello, please give csv filename: "))
         self.catalogue.read_file(file)
 
     def do(self):
+        """Takes option input and calls relevant catalogue method
+        """
         self.read_file()
-        self.catalogue.kokeilu()
         self.manual()
         while True:
             print("")
@@ -36,20 +42,18 @@ class BoneatorTextInterface:
             elif option == "1":
                 self.catalogue.show_file()
             elif option == "2":
-                self.catalogue.count_species()
+                self.catalogue.count_species()           
             elif option == "3":
-                self.catalogue.count_nisp_by_class()
+                self.catalogue.count_nisp_and_weight_by_class()
             elif option == "4":
                 species = input("Give species: ")
                 print(self.catalogue.give_species(species))
             elif option == "5":
-                self.catalogue.count_nisp_and_weight()
-            elif option == "6":
                 print(self.catalogue.count_juveniles_by_species())
-            elif option == "7":
+            elif option == "6":
                 classis = input("Give class: ")
                 print(self.catalogue.give_species_breakdown_for_class(classis))
-            elif option == "8":
+            elif option == "7":
                 print(self.catalogue.all_burned_and_not())
 
 
