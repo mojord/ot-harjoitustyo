@@ -1,7 +1,6 @@
 import os
 import csv
-from bone import *
-#from testbone import *
+from bone import Bone
 
 
 class FileReader():
@@ -15,12 +14,6 @@ class FileReader():
                 parts = row.split(";")
                 if parts[0] == "nsp":
                     continue
-#                numero = parts[0]
-#                kuvaus = parts[1]
-#                os = parts[2]
-#                paaluokka = parts[3]
-#                weight = parts[4]
-#                bodypart = parts[5]
 
                 nisp = int(parts[0])
                 weight = float(parts[1])
@@ -45,20 +38,5 @@ class FileReader():
                 bones.append(Bone(nisp, weight, classis, species, ossum, element, side, fragment,
                              comment, sizeclass, part, burndegree, iuv, cut, findnr, x, y, context, layer))
 
-#                bones.append(TestBone(numero, kuvaus, os, paaluokka, weight, bodypart))
 
         return bones
-
-# if __name__ == "__main__":
-
-#    print("toimii")
-#    lukija = FileReader("testiluusto.csv")
-#    lukija = FileReader("boneatortest.csv")
-#    luut = lukija.read()
-
-#    for luu in luut:
-#        print(luu)
-
-
-#        if luu.species != "Indet":
-#            print(luu.species)

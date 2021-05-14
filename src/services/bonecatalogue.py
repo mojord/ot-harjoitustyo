@@ -1,5 +1,5 @@
 import os
-from tools.reader import *
+from tools.reader import FileReader
 from tools.plotter import Plotter
 
 dirname = os.path.dirname(__file__)
@@ -35,7 +35,7 @@ class Bonecatalogue:
             if bone.species != "Indet":
                 if bone.species in specieslist:
                     specieslist[bone.species] += bone.nisp
-                if bone.species not in specieslist:                
+                if bone.species not in specieslist:
                     specieslist[bone.species] = bone.nisp
         for key, value in specieslist.items():
             print(f"{key}, {value}")
@@ -43,7 +43,7 @@ class Bonecatalogue:
 
     def count_nisp_and_weight_by_class(self):
         """Counts and prints the number and weight of finds in each animal class
-        """ 
+        """
         nispweight = {}
         identified = 0
         indets = 0
@@ -57,12 +57,12 @@ class Bonecatalogue:
 
         for key, value in nispweight.items():
             print(f"{key}, {value[0]}, {round(value[1],2)} grs")
-        
+
         indets = nispweight["Indet"][0]
         identified = nispweight["Mammalia"][0]+nispweight["Aves"][0]+nispweight["Teleostei"][0]
-                    
+
         print(f"{identified} specimens identified by class, {indets} indetermined")
-        
+
         plot = Plotter()
         plot.bar_chart_nsp_and_weight(nispweight)
 
@@ -109,16 +109,16 @@ class Bonecatalogue:
         Returns:
             Species in class.
         """
-        specieslist = {}            
+        specieslist = {}
         for bone in self.file:
             if bone.classis == classis:
                 if bone.species not in specieslist:
                     specieslist[bone.species] = 0
                 specieslist[bone.species] += int(bone.nisp)
-        
+
         plot = Plotter()
         plot.species_breakdown_bar_chart(specieslist)
-        
+
         return specieslist
 
     def all_burned_and_not(self):
@@ -130,14 +130,14 @@ class Bonecatalogue:
         weight = 0
         burnednsp = 0
         burnedweight = 0
-        
+
         for bone in self.file:
             nsp += bone.nisp
             weight += bone.weight
             if bone.burndegree != "":
                 burnednsp += bone.nisp
                 burnedweight += bone.weight
-        
+
         burned_nsp_percent = (burnednsp / nsp) * 100
         burned_weight_percent = (burnedweight / weight) * 100
 

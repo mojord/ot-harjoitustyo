@@ -1,4 +1,3 @@
-
 import unittest
 import os
 from services.bonecatalogue import Bonecatalogue
@@ -15,7 +14,7 @@ class TestBonecatalogue(unittest.TestCase):
         tulos = self.catalogue.give_species(species)
         self.assertEqual(
             tulos, "Phocidae specimens: 3, identified bones: [('scapula', 446), ('costa', 917), ('costa', 917)]")
-    
+
     def test_count_juveniles_by_species_toimii_oikein(self):
         tulos = self.catalogue.count_juveniles_by_species()
         self.assertEqual(
