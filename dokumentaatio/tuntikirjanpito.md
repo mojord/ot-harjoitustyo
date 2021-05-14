@@ -25,5 +25,5 @@ päivä | aika | mitä tehty
 7.5.  | 2    | uuden testitiedoston valmistelua
 10.5. | 4    | dokumentaation parantelua
 14.5. | 10   | loput testit, koodin parantelua, testausdokumentti valmiiksi
-
-YHT.   60.5 tuntia
+14.5. | 1    | viimeistelyä ja korjailua
+YHT.   61.5 tuntia
