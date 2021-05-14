@@ -1,5 +1,4 @@
-import os
-from services.bonecatalogue import *
+from services.bonecatalogue import Bonecatalogue
 
 
 class BoneatorTextInterface:

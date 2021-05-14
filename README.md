@@ -1,3 +1,6 @@
+# Boneator
+
+Sovelluksella voidaan tuottaa tilastoja ja kuvaajia osteoarkeologista raporttia varten.
 
 ## Dokumentaatio
 [Tuntikirjanpito](https://github.com/mojord/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
@@ -7,6 +10,9 @@
 [Arkkitehtuurikuvaus](https://github.com/mojord/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 [Käyttöohje](https://github.com/mojord/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
+[Testausdokumentti](https://github.com/mojord/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
+
 ## Sovelluksen käyttäminen komentorivillä
 
 ### Riippuvuuksien asentaminen:
@@ -32,3 +38,9 @@ poetry run invoke coverage-report
 
 Raportti generoituu hmtlcov-hakemistoon. Raporttia voi tarkastella selaimessa avaamalla index.html-tiedoston. 
 
+### Pylint
+
+Tiedostossa .pylintrc määritellyn koodintarkastuksen voi suorittaa komennolla:
+```bash
+poetry run invoke lint
+```

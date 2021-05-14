@@ -1,4 +1,3 @@
-
 class Bone:
     """Class for storing the information of bone finds.
     Attributes:
@@ -43,8 +42,8 @@ class Bone:
         self.iuv = iuv
         self.cut = cut
         self.findnr = findnr
-        self.x = x
-        self.y = y
+        self.x = x # pylint: disable=invalid-name
+        self.y = y # pylint: disable=invalid-name
         self.context = context
         self.layer = layer
 

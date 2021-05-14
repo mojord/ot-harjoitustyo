@@ -29,6 +29,8 @@ class Bonecatalogue:
 
     def count_species(self):
         """Counts and prints species found in list
+        Returns:
+            Dictionary of species with counts.
         """
         specieslist = {}
         for bone in self.file:
@@ -40,9 +42,12 @@ class Bonecatalogue:
         for key, value in specieslist.items():
             print(f"{key}, {value}")
         print(f"{len(specieslist)} species")
+        return specieslist
 
     def count_nisp_and_weight_by_class(self):
-        """Counts and prints the number and weight of finds in each animal class
+        """Counts and prints the number and weight of finds in each animal class. Calls Plotter for graph.
+        Returns:
+            Dictionary of classes with counts and weights. 
         """
         nispweight = {}
         identified = 0
@@ -56,7 +61,8 @@ class Bonecatalogue:
                 nispweight[bone.classis] = [int(bone.nisp), float(bone.weight)]
 
         for key, value in nispweight.items():
-            print(f"{key}, {value[0]}, {round(value[1],2)} grs")
+            value[1] = round(value[1],2)
+            print(f"{key}, {value[0]}, {value[1]} grs")
 
         indets = nispweight["Indet"][0]
         identified = nispweight["Mammalia"][0]+nispweight["Aves"][0]+nispweight["Teleostei"][0]
@@ -66,10 +72,12 @@ class Bonecatalogue:
         plot = Plotter()
         plot.bar_chart_nsp_and_weight(nispweight)
 
+        return nispweight
+
     def give_species(self, species):
         """Counts and lists bones for given species.
         Returns:
-            Species, number and list of bones in string format
+            Species, number and list of bones in string format.
         """
         count = 0
         bonelist = []
@@ -82,7 +90,7 @@ class Bonecatalogue:
     def count_juveniles_by_species(self):
         """Counts juvenile individuals.
         Returns:
-            Species, number, and number of teeth and articular faces in string format.
+            Dictionary of species, number, and number of teeth and articular faces.
         """
         juveniles = {}
         for bone in self.file:
@@ -103,7 +111,7 @@ class Bonecatalogue:
         return juveniles
 
     def give_species_breakdown_for_class(self, classis):
-        """Counts which species are found in given animal class.
+        """Counts which species are found in given animal class. Calls Plotter for graph.
         Args:
             Animal class.
         Returns:

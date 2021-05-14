@@ -23,5 +23,7 @@ päivä | aika | mitä tehty
 4.5.  | 1    | pakkausrakenteen järjestely ja matplotlib kommentit pois
 7.5.  | 3    | uusi metodi ja matplotlib-opettelua
 7.5.  | 2    | uuden testitiedoston valmistelua
+10.5. | 4    | dokumentaation parantelua
+14.5. | 10   | loput testit, koodin parantelua, testausdokumentti valmiiksi
 
-YHT.   46.5 tuntia
+YHT.   60.5 tuntia

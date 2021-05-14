@@ -8,25 +8,34 @@ class TestBonecatalogue(unittest.TestCase):
     def setUp(self):
         self.catalogue = Bonecatalogue()
         self.catalogue.read_file(TESTDATA)
+    
+    def test_count_species(self):
+        result = self.catalogue.count_species()
+        self.assertEqual(
+            result, {'Esox lucius': 1, 'Macropus rufus': 1, 'Bos taurus': 1, 'Phocidae': 3, 'Ovis/Capra': 1, 'Anatidae': 1, 'Laridae': 2})
+    def test_count_nisp_and_weight_by_class(self):
+        result = self.catalogue.count_nisp_and_weight_by_class()
+        self.assertEqual(
+            result, {'Mammalia': [129, 48.24], 'Indet': [64, 4.41], 'Aves': [8, 0.74], 'Teleostei': [4, 0.12]})
 
-    def test_give_species_toimii_oikein(self):
+    def test_give_species(self):
         species = "Phocidae"
-        tulos = self.catalogue.give_species(species)
+        result = self.catalogue.give_species(species)
         self.assertEqual(
-            tulos, "Phocidae specimens: 3, identified bones: [('scapula', 446), ('costa', 917), ('costa', 917)]")
+            result, "Phocidae specimens: 3, identified bones: [('scapula', 446), ('costa', 917), ('costa', 917)]")
 
-    def test_count_juveniles_by_species_toimii_oikein(self):
-        tulos = self.catalogue.count_juveniles_by_species()
+    def test_count_juveniles_by_species(self):
+        result = self.catalogue.count_juveniles_by_species()
         self.assertEqual(
-            tulos, {'Macropus rufus': [1, 0, 0], 'Indet': [7, 2, 1]})
+            result, {'Macropus rufus': [1, 0, 0], 'Indet': [7, 2, 1]})
 
-    def test_give_species_breakdown_for_class_toimii_oikein(self):
+    def test_give_species_breakdown_for_class(self):
         classis = "Mammalia"
-        tulos = self.catalogue.give_species_breakdown_for_class(classis)
+        result = self.catalogue.give_species_breakdown_for_class(classis)
         self.assertEqual(
-            tulos, {'Indet': 123, 'Macropus rufus': 1, 'Bos taurus': 1, 'Phocidae': 3, 'Ovis/Capra': 1})
+            result, {'Indet': 123, 'Macropus rufus': 1, 'Bos taurus': 1, 'Phocidae': 3, 'Ovis/Capra': 1})
 
-    def test_all_burned_and_not_toimii_oikein(self):
-        tulos = self.catalogue.all_burned_and_not()
+    def test_all_burned_and_not(self):
+        result = self.catalogue.all_burned_and_not()
         self.assertEqual(
-            tulos,"ALL: 205, 53.51, NOT BURNED: 162, 44.86")
+            result,"ALL: 205, 53.51, NOT BURNED: 162, 44.86")
