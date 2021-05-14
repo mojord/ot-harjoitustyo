@@ -26,4 +26,5 @@ päivä | aika | mitä tehty
 10.5. | 4    | dokumentaation parantelua
 14.5. | 10   | loput testit, koodin parantelua, testausdokumentti valmiiksi
 14.5. | 1    | viimeistelyä ja korjailua
-YHT.   61.5 tuntia
+14.5. | 1    | poikkeuksen tuottaminen ja testi sille
+YHT.   62.5 tuntia

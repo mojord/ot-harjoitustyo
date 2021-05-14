@@ -41,6 +41,6 @@ class FileReader():
 
                     bones.append(Bone(nisp, weight, classis, species, ossum, element, side, fragment, comment, sizeclass, part, burndegree, iuv, cut, findnr, x, y, context, layer))
         except FileNotFoundError:
-            print("The specified file was not found. Please check that the file is located in the services directory and its name spelled correctly.")
+            raise FileNotFoundError("The specified file was not found. Please check that the file is located in the services directory and its name spelled correctly.")
         
         return bones

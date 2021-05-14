@@ -8,6 +8,10 @@ class TestBonecatalogue(unittest.TestCase):
     def setUp(self):
         self.catalogue = Bonecatalogue()
         self.catalogue.read_file(TESTDATA)
+
+    def test_read_error(self):
+        self.assertRaises(FileNotFoundError, lambda: self.catalogue.read_file("gobbeldygook"))
+            
     
     def test_count_species(self):
         result = self.catalogue.count_species()
