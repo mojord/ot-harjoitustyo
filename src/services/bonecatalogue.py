@@ -6,86 +6,89 @@ dirname = os.path.dirname(__file__)
 
 
 class Bonecatalogue:
-    """Class for producing statistics from osteological analysis csv:s
+    """Class for producing statistics from osteological analysis csv:s.
     """
 
     def __init__(self):
         self.file = []
 
     def read_file(self, file):
-        """Reads csv into a list of bone objects
+        """Reads csv into a list of Bone objects.
         Args:
-            file: given csv file
+            file: User given csv file.
         """
         path = os.path.join(dirname, file)
         reader = FileReader(path)
         self.file = reader.read()
 
     def show_file(self):
-        """Prints the list of bone objects
+        """Prints the list of Bone objects.
         """
         for bone in self.file:
             print(bone)
 
     def count_species(self):
-        """Counts and prints species found in list
+        """Counts and prints species found in list.
         Returns:
             Dictionary of species with counts.
         """
-        specieslist = {}
+        species_list = {}
         for bone in self.file:
             if bone.species != "Indet":
-                if bone.species in specieslist:
-                    specieslist[bone.species] += bone.nisp
-                if bone.species not in specieslist:
-                    specieslist[bone.species] = bone.nisp
-        for key, value in specieslist.items():
+                if bone.species in species_list:
+                    species_list[bone.species] += bone.nisp
+                if bone.species not in species_list:
+                    species_list[bone.species] = bone.nisp
+        for key, value in species_list.items():
             print(f"{key}, {value}")
-        print(f"{len(specieslist)} species")
-        return specieslist
+        print(f"{len(species_list)} species")
+        return species_list
 
     def count_nisp_and_weight_by_class(self):
         """Counts and prints the number and weight of finds in each animal class. Calls Plotter for graph.
         Returns:
-            Dictionary of classes with counts and weights. 
+            Dictionary of classes with counts and weights.
         """
-        nispweight = {}
+        nisp_weight = {}
         identified = 0
         indets = 0
 
         for bone in self.file:
-            if bone.classis in nispweight:
-                nispweight[bone.classis][0] += int(bone.nisp)
-                nispweight[bone.classis][1] += float(bone.weight)
-            if bone.classis not in nispweight:
-                nispweight[bone.classis] = [int(bone.nisp), float(bone.weight)]
+            if bone.classis in nisp_weight:
+                nisp_weight[bone.classis][0] += int(bone.nisp)
+                nisp_weight[bone.classis][1] += float(bone.weight)
+            if bone.classis not in nisp_weight:
+                nisp_weight[bone.classis] = [int(bone.nisp), float(bone.weight)]
 
-        for key, value in nispweight.items():
+        for key, value in nisp_weight.items():
             value[1] = round(value[1],2)
             print(f"{key}, {value[0]}, {value[1]} grs")
 
-        indets = nispweight["Indet"][0]
-        identified = nispweight["Mammalia"][0]+nispweight["Aves"][0]+nispweight["Teleostei"][0]
+        indets = nisp_weight["Indet"][0]
+        identified = nisp_weight["Mammalia"][0]+nisp_weight["Aves"][0]+nisp_weight["Teleostei"][0]
 
         print(f"{identified} specimens identified by class, {indets} indetermined")
 
         plot = Plotter()
-        plot.bar_chart_nsp_and_weight(nispweight)
+        plot.bar_chart_nsp_and_weight(nisp_weight)
 
-        return nispweight
+        return nisp_weight
 
     def give_species(self, species):
         """Counts and lists bones for given species.
+
+        Args:
+            species: User given species.
         Returns:
             Species, number and list of bones in string format.
         """
         count = 0
-        bonelist = []
+        bone_list = []
         for bone in self.file:
             if bone.species == species:
                 count += 1
-                bonelist.append((bone.ossum, bone.findnr))
-        return f"{species} specimens: {count}, identified bones: {bonelist}"
+                bone_list.append((bone.ossum, bone.findnr))
+        return f"{species} specimens: {count}, identified bones: {bone_list}"
 
     def count_juveniles_by_species(self):
         """Counts juvenile individuals.
@@ -113,21 +116,21 @@ class Bonecatalogue:
     def give_species_breakdown_for_class(self, classis):
         """Counts which species are found in given animal class. Calls Plotter for graph.
         Args:
-            Animal class.
+            classis: User given animal class.
         Returns:
             Species in class.
         """
-        specieslist = {}
+        species_list = {}
         for bone in self.file:
             if bone.classis == classis:
-                if bone.species not in specieslist:
-                    specieslist[bone.species] = 0
-                specieslist[bone.species] += int(bone.nisp)
+                if bone.species not in species_list:
+                    species_list[bone.species] = 0
+                species_list[bone.species] += int(bone.nisp)
 
         plot = Plotter()
-        plot.species_breakdown_bar_chart(specieslist)
+        plot.species_breakdown_bar_chart(species_list)
 
-        return specieslist
+        return species_list
 
     def all_burned_and_not(self):
         """Counts nsp and weight for not burned and burned bones.
@@ -136,18 +139,22 @@ class Bonecatalogue:
         """
         nsp = 0
         weight = 0
-        burnednsp = 0
-        burnedweight = 0
+        burned_nsp = 0
+        burned_weight = 0
 
         for bone in self.file:
             nsp += bone.nisp
             weight += bone.weight
             if bone.burndegree != "":
-                burnednsp += bone.nisp
-                burnedweight += bone.weight
+                burned_nsp += bone.nisp
+                burned_weight += bone.weight
+        weight = round(weight,2)
+        burned_weight = round(burned_weight,2)
+        not_burned_weight = weight-burned_weight
+        not_burned_weight = round(not_burned_weight,2)
 
-        burned_nsp_percent = (burnednsp / nsp) * 100
-        burned_weight_percent = (burnedweight / weight) * 100
+        burned_nsp_percent = (burned_nsp / nsp) * 100
+        burned_weight_percent = (burned_weight / weight) * 100
 
-        print(f"ALL NSP: {nsp} ALL WEIGHT: {weight} grs\nNOT BURNED NSP: {nsp-burnednsp} | PER CENT NSP: {100-burned_nsp_percent:.0f} | NOT BURNED WEIGHT: {weight - burnedweight} grs | PER CENT WEIGHT: {100-burned_weight_percent:.0f}\nBURNED NSP: {burnednsp} | PER CENT NSP: {burned_nsp_percent:.0f} | BURNED WEIGHT: {burnedweight} grs | PER CENT WEIGHT: {burned_weight_percent:.0f}")
-        return f"ALL: {nsp}, {weight}, NOT BURNED: {nsp-burnednsp}, {weight-burnedweight}"
+        print(f"ALL NSP: {nsp} ALL WEIGHT: {weight} grs\nNOT BURNED NSP: {nsp-burned_nsp} | PER CENT NSP: {100-burned_nsp_percent:.0f} | NOT BURNED WEIGHT: {not_burned_weight} grs | PER CENT WEIGHT: {100-burned_weight_percent:.0f}\nBURNED NSP: {burned_nsp} | PER CENT NSP: {burned_nsp_percent:.0f} | BURNED WEIGHT: {burned_weight} grs | PER CENT WEIGHT: {burned_weight_percent:.0f}")
+        return f"ALL: {nsp}, {weight}, NOT BURNED: {nsp-burned_nsp}, {not_burned_weight}"

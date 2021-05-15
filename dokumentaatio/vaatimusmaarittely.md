@@ -27,7 +27,7 @@ jotka voivat olla yhdestä tai kymmenestä yksilöstä, elopaino 500-5000kg.
 Sovelluksen käyttäjät ovat osteoarkeologeja. Ainakaan alkuvaiheessa ei ole tarpeen luoda
 käyttäjähierarkiaa.
 
-## Suunnittellut toiminnallisuudet
+## Suunnitellut toiminnallisuudet
 
 - tekstikäyttöliittymä
 - yksinkertainen graafinen käyttöliittymä
@@ -46,6 +46,12 @@ Käytettävissä olevan ajan puitteissa perusversioon voidaan lisätä toiminnal
 ## Tehty
 
 - tekstikäyttöliittymä
+- graafinen käyttöliittymä
 - sovellus ja osa sen metodeista
-- lisää metodeja, esim. eläinlajien laskeminen luokittain
 - graafien tuottaminen osalle metodeista
+
+## Loppuhuomioita
+
+- Sovelluksen ominaisuudet jäivät vielä suppeiksi. Tämä johtui lähes yksinomaan siitä, että sille keskeisen matplotlibin ja poetryn yhteensopivuusongelman ratkaisemiseen käytettiin n. 20 tuntia. Apua tähän ei saanut kyselemällä moneen viikkoon. Lopulta saatu sinänsä hyvä apu ei ratkaissut ongelmaa, mutta sain sen lopulta ratkaistua itse.
+- Sovelluslogiikassa on metodeja, jotka sekä tulostavat että palauttavat. Jatkossa voisi miettiä, mikä on sovelluksen kannalta ideaalinen toteutustapa.
+- Yleisesti ottaen tällainen sovellus ei tarvitse pysyväistallennusta, minkä vuoksi toteutettiin mieluummin edes joitain kuvaajatoimintoja. Jatkovaiheessa sovellukseen tehtäneen kuitenkin tietokantaominaisuus palvelemaan erityistä tutkimuskäyttöä, tietokantaa eräistä rautakautisista linnunluista. Tavallisempaan tutkimuskäyttöön tietokantaominaisuus on tarpeeton.

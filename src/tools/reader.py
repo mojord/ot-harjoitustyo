@@ -10,6 +10,9 @@ class FileReader():
         """Reads csv file into Bone objects.
         Returns:
             List of Bone objects.
+        Raises:
+            FileNotFoundError:
+                When the user specifies a non-existent filename.
         """
         bones = []
         try:
@@ -42,5 +45,5 @@ class FileReader():
                     bones.append(Bone(nisp, weight, classis, species, ossum, element, side, fragment, comment, sizeclass, part, burndegree, iuv, cut, findnr, x, y, context, layer))
         except FileNotFoundError:
             raise FileNotFoundError("The specified file was not found. Please check that the file is located in the services directory and its name spelled correctly.")
-        
+
         return bones

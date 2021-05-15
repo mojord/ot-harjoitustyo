@@ -1,15 +1,17 @@
 nsp;paino;luokka;laji;luu;osa;puoli;kokonainen;huomioita;kokoluokka;part;burn;iuv;cut;findnr;x;y;context;layer
-3;2;Mammalia;Bos taurus;femur;dist;dx;fr;ruma;8;ex;wnc;iuv;cut;1;1,0;2,0;;1
+1;16.3;Mammalia;Bos taurus;femur;dist;dx;fr;pathological;8;ex;wnc;iuv;cut;1;1,0;2,0;;1
 4;0.25;Indet;Indet;indet;;;;;;;;;;2;1,0;2,0;;1
-2;0.04;Teleostei;Esox lucius;vertebra;;;fr;;;tr;;;;3;2,0;2,0;;2
+6;0.04;Teleostei;Esox lucius;vertebra;;;fr;;;tr;;;;3;2,0;2,0;;2
 5;0.04;Aves;Indet;indet;;;;;;;;;;4;1,0;2,0;;2
 1;0.02;Teleostei;Indet;indet;;;;;;;;;;5;1,0;2,0;;2
 1;0.5;Mammalia;Indet;indet;;;;;;;;;;6;1,0;2,0;;2
 10;0.63;Indet;Indet;indet;;;;;;;;;;6;1,0;2,0;;3
-4;1.76;Aves;Indet;indet;;;;;;;;;;7;1,0;2,0;;3
+1;1.76;Aves;Raphus cucullatus;tibiotarsus;prox;sin;fr;sensational;3;ex;wblu;;;7;1,0;2,0;;3
 2;1.75;Mammalia;Indet;indet;;;;;;;;;;7;1,0;2,0;;3
 6;0.37;Indet;Indet;indet;;;;;;;;;;8;1,0;2,0;;3
 3;0.75;Indet;Indet;indet;;;;;;;;;;9;1,0;2,0;;3
-4;0.75;Mammalia;Indet;indet;;;;;;;;;;9;1,0;2,0;;3
+1;8.75;Mammalia;Bradypus tridactylus;os temporale;pars petrosa;dx;fr;gnawed;8;cr;;;;9;1,0;2,0;;3
 7;0.5;Indet;Indet;indet;;;;;;;;;;9;1,0;2,0;;3
 1;1.23;Aves;Indet;indet;;;;;;;;;;9;1,0;2,0;;3
+2;2.06;Teleostei;Carcharodon carcharias;dens;;;fr;human phalanx stuck;;cr;;;;3;2,0;2,0;;2
+1;1.76;Aves;Donaldus duckus;phalanx 2 2;;sin;whole;;6;ex;;;;7;1,0;2,0;;3

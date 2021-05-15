@@ -27,4 +27,6 @@ päivä | aika | mitä tehty
 14.5. | 10   | loput testit, koodin parantelua, testausdokumentti valmiiksi
 14.5. | 1    | viimeistelyä ja korjailua
 14.5. | 1    | poikkeuksen tuottaminen ja testi sille
-YHT.   62.5 tuntia
+15.5. | 3    | docstring-viimeistelyä, sekvenssikaavion korjaus
+15.5. | 1    | dokumentaation viimeistelyä
+YHT.   85.5 tuntia

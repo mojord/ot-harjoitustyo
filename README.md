@@ -50,3 +50,5 @@ Tiedostossa .pylintrc määritellyn koodintarkastuksen voi suorittaa komennolla:
 ```bash
 poetry run invoke lint
 ```
+
+Pylintin huomautukset liittyvät yksinomaan Bone-luokan attribuuttien määrään, joka on sovellukselle välttämätön. Koska ei saatu vastausta kysymykseen, voiko tarkistuksen kytkeä pois päältä näissä kohdissa, sitä ei tehty.

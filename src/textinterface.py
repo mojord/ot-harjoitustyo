@@ -2,14 +2,14 @@ from services.bonecatalogue import Bonecatalogue
 
 
 class BoneatorTextInterface:
-    """Class for running text interface
+    """Class for running text interface.
     """
     def __init__(self):
         self.file = []
         self.catalogue = Bonecatalogue()
 
     def manual(self):
-        """Prints manual
+        """Prints manual.
         """
         print("Options: ")
         print("Press 0 to quit, m to see manual.")
@@ -19,14 +19,16 @@ class BoneatorTextInterface:
         print("7 Give total and not burned/burned share.")
 
     def read_file(self):
-        """Takes filename input and calls catalogue read method.
+        """Takes filename input and calls catalogue read_file method.
         """
         print("Welcome!Please use filenames testaus.csv(simplest), bartsbones.csv or barts2.csv(largest) for trying out this program.")
         file = (input("Hello, please give csv filename: "))
+
         self.catalogue.read_file(file)
 
+
     def do(self):
-        """Takes option input and calls relevant catalogue method
+        """Takes option input and calls relevant catalogue method.
         """
         self.read_file()
         self.manual()
@@ -41,7 +43,7 @@ class BoneatorTextInterface:
             elif option == "1":
                 self.catalogue.show_file()
             elif option == "2":
-                self.catalogue.count_species()           
+                self.catalogue.count_species()
             elif option == "3":
                 self.catalogue.count_nisp_and_weight_by_class()
             elif option == "4":

@@ -11,8 +11,7 @@ class TestBonecatalogue(unittest.TestCase):
 
     def test_read_error(self):
         self.assertRaises(FileNotFoundError, lambda: self.catalogue.read_file("gobbeldygook"))
-            
-    
+
     def test_count_species(self):
         result = self.catalogue.count_species()
         self.assertEqual(

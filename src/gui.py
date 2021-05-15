@@ -13,6 +13,8 @@ class GUI:
         self._classis_entry = None
 
     def start(self):
+        """Creates graphic interface with buttons and input boxes.
+        """
         header_label = Label(
             master=self._root, text="Welcome to Boneator!",
             bg="khaki2", font="HeadingFont 15 bold"
@@ -41,7 +43,7 @@ class GUI:
             master=self._root, text="Click to enter species.",
             bg=enter_color, bd=5, command=self.handle_species_entry, font=button_font
             )
-        
+
         classis_input_label = Label(
             master=self._root, text="Enter class to find number of identified species.", font=button_font
             )
@@ -51,7 +53,7 @@ class GUI:
             bg=enter_color, bd=5, command=self.handle_classis_entry, font=button_font)
 
         tester_instructions_label = Label(
-            master=self._root, text="NOTE: Please use csv files testaus.csv (simplest), bartsbones.csv or barts2.csv (largest).", font="CaptionFont 15")
+            master=self._root, text="NOTE: Please use csv files testaus.csv (simplest&weirdest), bartsbones.csv or barts2.csv (largest).", font="CaptionFont 15")
 
         button_quit = Button(master=self._root, text="QUIT", bg="firebrick1",
                              command=self.quit, font="CaptionFont 15 bold")
@@ -60,7 +62,7 @@ class GUI:
         button_count_species = Button(
             master=self._root, text="Count species",
             bg=button_color, command=self.handle_count_species_click, font=button_font
-            )       
+            )
         button_count_nisp_and_weight_by_class = Button(
             master=self._root, text="Count nisp and weight",
             bg=button_color, command=self.handle_count_nisp_and_weight_by_class_click, font=button_font
@@ -100,11 +102,19 @@ class GUI:
         button_all_burned_and_not.grid(row=2, column=2)
 
     def quit(self):
+        """Closes graphic interface and kills process.
+        """
         self._root.destroy()
 
     def handle_csv_entry(self):
+        """Takes csv filename as input and calls Reader to read file as Bone objects.
+        """
         csv_name = self._csv_entry.get()
-        self.catalogue.read_file(csv_name)
+
+        try:
+            self.catalogue.read_file(csv_name)
+        except FileNotFoundError:
+            print("The specified file was not found. Please check that the file is located in the services directory and its name spelled correctly.")
 
     def handle_species_entry(self):
         species_name = self._species_entry.get()
@@ -125,7 +135,7 @@ class GUI:
 
     def handle_count_juveniles_by_species_click(self):
         print(self.catalogue.count_juveniles_by_species())
-    
+
     def handle_all_burned_and_not_click(self):
         self.catalogue.all_burned_and_not()
 
