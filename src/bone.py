@@ -48,7 +48,8 @@ class Bone:
         self.layer = layer
 
     def __str__(self):
-        """Returns:
+        """String method for Bone object
+        Returns:
             bone in string format.
         """
         return f"bone: {self.nisp}, {self.weight}, {self.classis}, {self.species}, {self.ossum}, {self.element} {self.side}, {self.fragment}, {self.comment}, {self.sizeclass}, {self.part}, {self.burndegree}, {self.iuv}, {self.cut}, {self.findnr}, {self.x}, {self.y}, {self.context}, {self.layer}"
